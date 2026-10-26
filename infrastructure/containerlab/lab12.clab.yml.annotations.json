@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "branch-sw1",
+      "id": "esm-branch-sw1",
       "position": {
         "x": 920,
         "y": 480
@@ -150,35 +150,35 @@
       }
     },
     {
-      "id": "dmz-sw",
+      "id": "esm-dmz-sw",
       "position": {
         "x": 500,
         "y": 460
       }
     },
     {
-      "id": "mgmt-sw",
+      "id": "esm-mgmt-sw",
       "position": {
         "x": 980,
         "y": 220
       }
     },
     {
-      "id": "servers-sw",
+      "id": "esm-servers-sw",
       "position": {
         "x": 780,
         "y": 100
       }
     },
     {
-      "id": "users-sw",
+      "id": "esm-users-sw",
       "position": {
         "x": 580,
         "y": 220
       }
     },
     {
-      "id": "core-sw",
+      "id": "esm-core-sw",
       "position": {
         "x": 780,
         "y": 220

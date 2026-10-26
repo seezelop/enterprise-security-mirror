@@ -79,6 +79,6 @@ table inet internal_filter {
             counter accept
 
         # Everything else is denied.
-        counter log prefix "LAB12-EW-DROP " drop
+        counter log prefix "ESM-EW-DROP " drop
     }
 }
