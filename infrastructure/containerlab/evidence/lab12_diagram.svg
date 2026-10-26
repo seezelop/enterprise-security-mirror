@@ -1,0 +1,1019 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="963" height="431" viewBox="0 0 963 431">
+  <rect x="0" y="0" width="963" height="431" fill="#1e1e1e" />
+  <g class="annotation-groups-layer" transform="translate(229.5082444438799, 43.414363846899136) scale(0.4221561448083233)" />
+  <g class="annotation-shapes-layer" transform="translate(229.5082444438799, 43.414363846899136) scale(0.4221561448083233)">
+    <g class="annotation-shape" data-id="freeShape_1791988183752">
+      <ellipse cx="21.051767790026375" cy="386.47272808818985" rx="110.5" ry="110.5" fill="rgba(127, 127, 127, 0.16)" stroke="#bbbebf" stroke-width="1" />
+    </g>
+  </g>
+  <defs>
+    <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur" />
+      <feFlood flood-color="#3C3E41" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g class="export-graph-layer" transform="translate(229.5082444438799, 43.414363846899136) scale(0.4221561448083233)">
+    <g class="export-edge" data-id="Clab-Link0">
+      <path d="M 40 380 L 220 380" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="48.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="60" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+      <g class="edge-label">
+        <rect x="188.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="200" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link1">
+      <path d="M 260 380 L 380 380" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="268.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="280" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="348.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="360" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link2">
+      <path d="M 420 380 L 640 380" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="428.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="440" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="608.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="620" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link3">
+      <path d="M 680 380 L 780 380" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="688.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="700" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="748.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="760" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link4">
+      <path d="M 800 360 L 800 260" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="788.2685546875" y="334" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="800" y="340" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="779.3818359375" y="274" width="41.236328125" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="800" y="280" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">core-r01</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link5">
+      <path d="M 780 240 L 620 240" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="732.99267578125" y="234" width="54.0146484375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="760" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">users-trunk</text>
+      </g>
+      <g class="edge-label">
+        <rect x="615.49267578125" y="234" width="49.0146484375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="640" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">core-trunk</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link6">
+      <path d="M 580 240 L 500 240" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="542.7119140625" y="234" width="34.576171875" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="560" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">user01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="508.2685546875" y="234" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="520" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link7">
+      <path d="M 800 220 L 800 140" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="768.82763671875" y="194" width="62.3447265625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="800" y="200" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">servers-trunk</text>
+      </g>
+      <g class="edge-label">
+        <rect x="770.216796875" y="154" width="59.56640625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="800" y="160" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">servers-core</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link8">
+      <path d="M 788 100 L 752 40" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="762.0870380164495" y="76.85014148574912" width="31.24609375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="777.7100848914495" y="82.85014148574912" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">dns01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="750.5584697960505" y="51.14985851425088" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="762.2899151085505" y="57.14985851425088" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link9">
+      <path d="M 816 100 L 864 40" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="812.5900923573384" y="78.3826238111394" width="31.8076171875" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="828.4939009510884" y="84.3826238111394" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">app01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="839.7746537364116" y="49.617376188860604" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="851.5060990489116" y="55.617376188860604" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link10">
+      <path d="M 820 240 L 980 240" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="812.71923828125" y="234" width="54.5615234375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="840" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">mgmt-trunk</text>
+      </g>
+      <g class="edge-label">
+        <rect x="934.1083984375" y="234" width="51.783203125" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="960" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">mgmt-core</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link11">
+      <path d="M 1020 240 L 1140 240" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="1018.8203125" y="234" width="42.359375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1040" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">admin01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="1108.2685546875" y="234" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1120" y="240" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link12">
+      <path d="M 1000 220 L 1000 100" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="979.9384765625" y="194" width="40.123046875" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1000" y="200" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">mgmt01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="988.2685546875" y="114" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1000" y="120" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link13">
+      <path d="M 640 394.2857142857143 L 540 465.7142857142857" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="611.9938852633653" y="399.9104781600962" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="623.7253305758653" y="405.9104781600962" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth3</text>
+      </g>
+      <g class="edge-label">
+        <rect x="527.6047475491347" y="448.0895218399038" width="57.33984375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="556.2746694241347" y="454.0895218399038" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">firewall-dmz</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link14">
+      <path d="M 520 500 L 520 600" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="503.26611328125" y="514" width="33.4677734375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="520" y="520" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">web01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="508.2685546875" y="574" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="520" y="580" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link15">
+      <path d="M 820 380 L 920 380" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="828.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="840" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth3</text>
+      </g>
+      <g class="edge-label">
+        <rect x="888.2685546875" y="374" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="900" y="380" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link16">
+      <path d="M 807.5 400 L 852.5 520" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="802.7910235192678" y="412.7265835513809" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="814.5224688317678" y="418.7265835513809" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth4</text>
+      </g>
+      <g class="edge-label">
+        <rect x="833.7460858557322" y="495.2734164486191" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="845.4775311682322" y="501.2734164486191" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link17">
+      <path d="M 795 400 L 765 520" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="778.4178421867733" y="413.40285000290663" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="790.1492874992733" y="419.40285000290663" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth5</text>
+      </g>
+      <g class="edge-label">
+        <rect x="758.1192671882267" y="494.59714999709337" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="769.8507125007267" y="500.59714999709337" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link18">
+      <path d="M 940 400 L 940 480" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="928.2685546875" y="414" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="940" y="420" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="916.046875" y="454" width="47.90625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="940" y="460" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">br1-router</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link19">
+      <path d="M 960 504.44444444444446 L 1100 535.5555555555555" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="953.344053703679" y="502.7830536008176" width="52.359375" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="979.523741203679" y="508.7830536008176" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">br1-user01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="1068.744813483821" y="525.2169463991825" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1080.476258796321" y="531.2169463991825" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link20">
+      <path d="M 960 495.55555555555554 L 1100 464.44444444444446" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="949.452452141179" y="485.2169463991824" width="60.142578125" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="979.523741203679" y="491.2169463991824" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">br1-admin01</text>
+      </g>
+      <g class="edge-label">
+        <rect x="1068.744813483821" y="462.7830536008176" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="1080.476258796321" y="468.7830536008176" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link21">
+      <path d="M 860 560 L 860 640" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="848.2685546875" y="574" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="860" y="580" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="848.2685546875" y="614" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="860" y="620" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-edge" data-id="Clab-Link22">
+      <path d="M 760 560 L 760 640" fill="none" stroke="#00df2b" stroke-width="4" opacity="0.5" />
+      <g class="edge-label">
+        <rect x="748.2685546875" y="574" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="760" y="580" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth2</text>
+      </g>
+      <g class="edge-label">
+        <rect x="748.2685546875" y="614" width="23.462890625" height="12" fill="rgb(18, 19, 20)" rx="4" ry="4" />
+        <text x="760" y="620" font-size="10" font-family="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" dominant-baseline="central" fill="rgb(187, 190, 191)" text-anchor="middle">eth1</text>
+      </g>
+    </g>
+    <g class="export-node topology-node" data-id="internet01">
+      <g transform="rotate(0 20 380)">
+        <rect x="0" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(0, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="-8.879623413085938" y="402" width="57.759246826171875" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="20" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">internet01</text>
+    </g>
+    <g class="export-node topology-node" data-id="isp01">
+      <g transform="rotate(0 240 380)">
+        <rect x="220" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(220, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="222.62744140625" y="402" width="34.7451171875" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="240" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">isp01</text>
+    </g>
+    <g class="export-node topology-node" data-id="edge-r01">
+      <g transform="rotate(0 400 380)">
+        <rect x="380" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(380, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="373.6086120605469" y="402" width="52.78277587890625" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="400" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">edge-r01</text>
+    </g>
+    <g class="export-node topology-node" data-id="firewall01">
+      <g transform="rotate(0 660 380)">
+        <rect x="640" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(640, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="632.3713226318359" y="402" width="55.257354736328125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="660" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">firewall01</text>
+    </g>
+    <g class="export-node topology-node" data-id="core-r01">
+      <g transform="rotate(0 800 380)">
+        <rect x="780" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(780, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="775.1709289550781" y="402" width="49.65814208984375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="800" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">core-r01</text>
+    </g>
+    <g class="export-node network-node" data-id="core-sw">
+      <g transform="rotate(0 800 240)">
+        <rect x="780" y="220" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(780, 220)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="776.4191436767578" y="262" width="47.161712646484375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="800" y="271.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">core-sw</text>
+    </g>
+    <g class="export-node network-node" data-id="users-sw">
+      <g transform="rotate(0 600 240)">
+        <rect x="580" y="220" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(580, 220)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="573.6222686767578" y="262" width="52.755462646484375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="600" y="271.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">users-sw</text>
+    </g>
+    <g class="export-node network-node" data-id="servers-sw">
+      <g transform="rotate(0 800 120)">
+        <rect x="780" y="100" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(780, 100)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="768.9626312255859" y="142" width="62.074737548828125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="800" y="151.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">servers-sw</text>
+    </g>
+    <g class="export-node network-node" data-id="mgmt-sw">
+      <g transform="rotate(0 1000 240)">
+        <rect x="980" y="220" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(980, 220)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="973.3163604736328" y="262" width="53.367279052734375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="1000" y="271.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">mgmt-sw</text>
+    </g>
+    <g class="export-node network-node" data-id="dmz-sw">
+      <g transform="rotate(0 520 480)">
+        <rect x="500" y="460" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(500, 460)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="496.7332458496094" y="502" width="46.53350830078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="520" y="511.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">dmz-sw</text>
+    </g>
+    <g class="export-node topology-node" data-id="user01">
+      <g transform="rotate(0 480 240)">
+        <rect x="460" y="220" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(460, 220)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="458.8964538574219" y="262" width="42.20709228515625" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="480" y="271.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">user01</text>
+    </g>
+    <g class="export-node topology-node" data-id="dns01">
+      <g transform="rotate(0 740 20)">
+        <rect x="720" y="0" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(720, 0)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="720.7592163085938" y="42" width="38.4815673828125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="740" y="51.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">dns01</text>
+    </g>
+    <g class="export-node topology-node" data-id="app01">
+      <g transform="rotate(0 880 20)">
+        <rect x="860" y="0" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(860, 0)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="860.4451141357422" y="42" width="39.109771728515625" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="880" y="51.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">app01</text>
+    </g>
+    <g class="export-node topology-node" data-id="admin01">
+      <g transform="rotate(0 1160 240)">
+        <rect x="1140" y="220" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(1140, 220)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="1134.542724609375" y="262" width="50.91455078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="1160" y="271.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">admin01</text>
+    </g>
+    <g class="export-node topology-node" data-id="mgmt01">
+      <g transform="rotate(0 1000 80)">
+        <rect x="980" y="60" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(980, 60)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="975.7936706542969" y="102" width="48.41265869140625" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="1000" y="111.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">mgmt01</text>
+    </g>
+    <g class="export-node topology-node" data-id="web01">
+      <g transform="rotate(0 520 620)">
+        <rect x="500" y="600" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(500, 600)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="499.51646423339844" y="642" width="40.967071533203125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="520" y="651.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">web01</text>
+    </g>
+    <g class="export-node topology-node" data-id="branch-r01">
+      <g transform="rotate(0 940 380)">
+        <rect x="920" y="360" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(920, 360)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="908.948974609375" y="402" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="940" y="411.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">branch-r01</text>
+    </g>
+    <g class="export-node network-node" data-id="branch-sw1">
+      <g transform="rotate(0 940 500)">
+        <rect x="920" y="480" width="40" height="40" rx="4" ry="4" fill="#F59E0B" />
+        <g transform="translate(920, 480)" style="color: #F59E0B">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20,70.9c0.6,8,7.8,14.6,16.2,14.6h42.9c7.1,0,13.9-3.6,17.8-9.5c7.8-11.6,0-28.6-13.9-30.8                                 c-1.9-0.2-3.5-0.2-5.4,0l-2,0.2c-1.5,0.2-3-0.5-3.7-2c-3.2-5.8-9.8-9.6-17.3-8.7c-7.8,0.9-15.1,7.2-15.1,14.9v1.3                                 c0,2-1.7,3.6-3.7,3.6h-0.2C26.7,54.5,19.4,62,20,70.9z" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="907.0862121582031" y="522" width="65.82757568359375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="940" y="531.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">branch-sw1</text>
+    </g>
+    <g class="export-node topology-node" data-id="br1-user01">
+      <g transform="rotate(0 1120 540)">
+        <rect x="1100" y="520" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(1100, 520)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="1088.948974609375" y="562" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="1120" y="571.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">br1-user01</text>
+    </g>
+    <g class="export-node topology-node" data-id="br1-admin01">
+      <g transform="rotate(0 1120 460)">
+        <rect x="1100" y="440" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(1100, 440)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="1084.5952453613281" y="482" width="70.80950927734375" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="1120" y="491.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">br1-admin01</text>
+    </g>
+    <g class="export-node topology-node" data-id="branch-r02">
+      <g transform="rotate(0 860 540)">
+        <rect x="840" y="520" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(840, 520)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="828.948974609375" y="562" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="860" y="571.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">branch-r02</text>
+    </g>
+    <g class="export-node topology-node" data-id="br2-user01">
+      <g transform="rotate(0 860 660)">
+        <rect x="840" y="640" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(840, 640)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="828.948974609375" y="682" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="860" y="691.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">br2-user01</text>
+    </g>
+    <g class="export-node topology-node" data-id="branch-r03">
+      <g transform="rotate(0 760 540)">
+        <rect x="740" y="520" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(740, 520)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="728.948974609375" y="562" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="760" y="571.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">branch-r03</text>
+    </g>
+    <g class="export-node topology-node" data-id="br3-user01">
+      <g transform="rotate(0 760 660)">
+        <rect x="740" y="640" width="40" height="40" rx="4" ry="4" fill="#005aff" />
+        <g transform="translate(740, 640)" style="color: #005aff">
+          <g transform="scale(0.3333)">
+            <rect height="120" width="120" fill="currentColor" />
+            <g>
+              <g>
+                <path d="M71.7,19.7V48h28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M91.2,38.5l7.5,7.6c1.3,1.3,1.3,3.1,0,4.3L91.1,58" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M20,47.8h28.4v-28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M38.8,28.3l7.6-7.5c1.3-1.3,3.1-1.3,4.3,0l7.7,7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M48,100.3V72H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.5,81.5L21,73.9c-1.3-1.3-1.3-3.1,0-4.3l7.6-7.7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <g>
+                <path d="M100,71.9H71.6v28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M81.2,91.4l-7.6,7.5c-1.3,1.3-3.1,1.3-4.3,0l-7.7-7.6" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect x="728.948974609375" y="682" width="62.10205078125" height="18.8" fill="rgba(0, 0, 0, 0.7)" rx="3" ry="3" />
+      <text x="760" y="691.4" font-size="11.2" font-weight="500" font-family="Roboto, sans-serif" dominant-baseline="central" fill="#F5F5F5" text-anchor="middle" filter="url(#text-shadow)">br3-user01</text>
+    </g>
+    <g class="ip-label">
+      <rect x="-59.7" y="425.0" width="159.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="20.0" y="443.0" font-size="16" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">198.51.100.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="142.4" y="425.0" width="195.2" height="46.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="240.0" y="443.0" font-size="16" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">eth1 198.51.100.1/24</text>
+      <text x="240.0" y="461.0" font-size="16" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">eth2 192.0.2.1/30</text>
+    </g>
+    <g class="ip-label">
+      <rect x="306.9" y="425.0" width="186.2" height="46.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="400.0" y="443.0" font-size="16" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">eth1 192.0.2.2/30</text>
+      <text x="400.0" y="461.0" font-size="16" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">eth2 203.0.113.1/30</text>
+    </g>
+    <g class="ip-label">
+      <rect x="520.0" y="300.0" width="184.0" height="82.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="528.0" y="318.0" font-size="15" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">firewall01</text>
+      <text x="528.0" y="336.0" font-size="15" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">eth1 203.0.113.2/30</text>
+      <text x="528.0" y="354.0" font-size="15" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">eth2 10.255.254.5/30</text>
+      <text x="528.0" y="372.0" font-size="15" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">eth3 10.70.50.1/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="875.0" y="290.0" width="392.3" height="95.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="883.0" y="307.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">core-r01</text>
+      <text x="883.0" y="324.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">eth1 10.255.254.6/30</text>
+      <text x="883.0" y="341.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">V10 10.70.10.1 | V20 10.70.20.1</text>
+      <text x="883.0" y="358.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">V30 10.70.30.1 | V99 10.70.99.1</text>
+      <text x="883.0" y="375.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">BR1 10.255.1.1 | BR2 10.255.2.1 | BR3 10.255.3.1</text>
+    </g>
+    <g class="ip-label">
+      <rect x="752.8" y="278.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="800.0" y="296.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="552.8" y="278.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="600.0" y="296.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="752.8" y="158.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="800.0" y="176.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="952.8" y="278.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1000.0" y="296.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="472.8" y="518.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="520.0" y="536.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="892.8" y="538.0" width="94.4" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="940.0" y="556.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">L2 / no IP</text>
+    </g>
+    <g class="ip-label">
+      <rect x="417.1" y="278.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="480.0" y="296.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.10.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="677.1" y="58.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="740.0" y="76.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.20.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="817.1" y="58.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="880.0" y="76.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.20.20/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="1097.1" y="278.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1160.0" y="296.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.30.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="937.1" y="118.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1000.0" y="136.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.99.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="457.1" y="658.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="520.0" y="676.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.70.50.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="1275.0" y="340.0" width="259.0" height="78.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1283.0" y="357.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">branch-r01</text>
+      <text x="1283.0" y="374.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">WAN 10.255.1.2/30</text>
+      <text x="1283.0" y="391.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">V10 10.71.10.1 | V30 10.71.30.1</text>
+      <text x="1283.0" y="408.2" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">V99 10.71.99.1</text>
+    </g>
+    <g class="ip-label">
+      <rect x="865.0" y="580.0" width="149.3" height="46.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="873.0" y="598.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">WAN 10.255.2.2/30</text>
+      <text x="873.0" y="616.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">LAN 10.72.10.1/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="630.0" y="580.0" width="149.3" height="46.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="638.0" y="598.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">WAN 10.255.3.2/30</text>
+      <text x="638.0" y="616.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="start" font-weight="500">LAN 10.73.10.1/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="1057.1" y="578.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1120.0" y="596.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.71.10.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="1057.1" y="498.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="1120.0" y="516.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.71.30.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="797.1" y="698.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="860.0" y="716.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.72.10.10/24</text>
+    </g>
+    <g class="ip-label">
+      <rect x="697.1" y="698.0" width="125.8" height="28.0" rx="7" ry="7" fill="#101416" fill-opacity="0.90" stroke="#6b7a86" stroke-width="1.3" />
+      <text x="760.0" y="716.0" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#e8f1f5" text-anchor="middle" font-weight="500">10.73.10.10/24</text>
+    </g>
+  </g>
+  <g class="annotation-shapes-layer" transform="translate(229.5082444438799, 43.414363846899136) scale(0.4221561448083233)" />
+  <g class="annotation-text-layer" transform="translate(229.5082444438799, 43.414363846899136) scale(0.4221561448083233)" />
+  <text x="18" y="26" font-size="18" font-family="Roboto, Helvetica, Arial, sans-serif" fill="#f5f5f5" font-weight="700">LAB 12 — Enterprise Network Security (IP addressing)</text>
+</svg>

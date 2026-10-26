@@ -1,0 +1,56 @@
+name: Baseline checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-baseline:
+    name: Validate imported Lab 12 baseline
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository files
+        uses: actions/checkout@v4
+
+      - name: Check baseline files and provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT=infrastructure/containerlab
+          test -f "$ROOT/lab12.clab.yml"
+          test -f "$ROOT/validation/policy.yaml"
+          test -f "$ROOT/validation/test_policy.py"
+          test -f "$ROOT/SOURCE_COMMIT.txt"
+          grep -Fxq '1635767a152fcd9c20e4a78eef9bb5968cb44d7e' "$ROOT/SOURCE_COMMIT.txt"
+
+      - name: Validate initial security policy file
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('infrastructure/containerlab/validation/policy.yaml')
+          # Lab 12 stores JSON syntax in a .yaml file; JSON is valid YAML 1.2.
+          policy = json.loads(path.read_text(encoding='utf-8'))
+          assert isinstance(policy.get('tests'), list)
+          assert len(policy['tests']) == 12, 'Expected 12 baseline cases'
+          assert all('name' in t and 'type' in t for t in policy['tests'])
+          print('PASS: 12 baseline policy cases parsed')
+          PY
+
+      - name: Check Python and shell script syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile infrastructure/containerlab/validation/test_policy.py
+          for script in infrastructure/containerlab/scripts/*.sh; do
+            bash -n "$script"
+          done
+          echo 'PASS: Python and shell syntax checks'

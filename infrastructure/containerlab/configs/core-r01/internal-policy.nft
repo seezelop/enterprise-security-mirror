@@ -1,0 +1,84 @@
+flush ruleset
+
+table inet internal_filter {
+
+    set corp_subnets {
+        type ipv4_addr
+        flags interval
+        elements = {
+            10.70.0.0/16,
+            10.71.0.0/16,
+            10.72.0.0/16,
+            10.73.0.0/16
+        }
+    }
+
+    set dns_clients {
+        type ipv4_addr
+        flags interval
+        elements = {
+            10.70.10.0/24,
+            10.71.10.0/24,
+            10.72.10.0/24,
+            10.73.10.0/24
+        }
+    }
+
+    set app_clients {
+        type ipv4_addr
+        flags interval
+        elements = {
+            10.70.10.0/24,
+            10.71.10.0/24,
+            10.72.10.0/24
+        }
+    }
+
+    set admins {
+        type ipv4_addr
+        flags interval
+        elements = {
+            10.70.30.0/24,
+            10.71.30.0/24
+        }
+    }
+
+    chain forward {
+        type filter hook forward priority 0;
+        policy drop;
+
+        ct state invalid counter drop
+        ct state established,related counter accept
+
+        # Corporate networks may reach the perimeter firewall.
+        # North-south restrictions are enforced by firewall01.
+        ip saddr @corp_subnets oifname "eth1" counter accept
+
+        # USERS -> internal DNS TCP/53.
+        ip saddr @dns_clients \
+            ip daddr 10.70.20.10 \
+            tcp dport 53 \
+            counter accept
+
+        # USERS -> APP TCP/443.
+        # BR3 is deliberately excluded.
+        ip saddr @app_clients \
+            ip daddr 10.70.20.20 \
+            tcp dport 443 \
+            counter accept
+
+        # ADMIN -> internal servers.
+        ip saddr @admins \
+            ip daddr 10.70.20.0/24 \
+            counter accept
+
+        # ADMIN -> MANAGEMENT TCP/22.
+        ip saddr @admins \
+            ip daddr 10.70.99.10 \
+            tcp dport 22 \
+            counter accept
+
+        # Everything else is denied.
+        counter log prefix "LAB12-EW-DROP " drop
+    }
+}

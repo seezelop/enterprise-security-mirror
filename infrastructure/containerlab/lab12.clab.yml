@@ -1,0 +1,325 @@
+name: lab12
+
+topology:
+  nodes:
+
+    # =========================================================
+    # INTERNET / PERIMETER
+    # =========================================================
+
+    internet01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 198.51.100.10/24 dev eth1
+        - ip route replace default via 198.51.100.1 dev eth1
+        - sh -c 'while true; do printf "LAB12 INTERNET SERVICE\n" | nc -l -p 443; done >/tmp/internet-service.log 2>&1 &'
+
+    isp01:
+      kind: linux
+      image: quay.io/frrouting/frr:10.6.1
+      exec:
+        - ip addr add 198.51.100.1/24 dev eth1
+        - ip addr add 192.0.2.1/30 dev eth2
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route replace 203.0.113.0/30 via 192.0.2.2 dev eth2
+
+    edge-r01:
+      kind: linux
+      image: quay.io/frrouting/frr:10.6.1
+      exec:
+        - ip addr add 192.0.2.2/30 dev eth1
+        - ip addr add 203.0.113.1/30 dev eth2
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route replace default via 192.0.2.1 dev eth1
+
+    firewall01:
+      kind: linux
+      image: alpine:3.20
+      binds:
+        - ./configs/firewall01/nftables.conf:/etc/nftables.conf
+      exec:
+        - apk add --no-cache nftables tcpdump
+        - ip addr add 203.0.113.2/30 dev eth1
+        - ip addr add 10.255.254.5/30 dev eth2
+        - ip addr add 10.70.50.1/24 dev eth3
+        - sysctl -w net.ipv4.ip_forward=1
+
+        # Default route toward the Internet.
+        - ip route replace default via 203.0.113.1 dev eth1
+
+        # Return routes toward HQ and branches.
+        - ip route replace 10.70.0.0/16 via 10.255.254.6 dev eth2
+        - ip route replace 10.71.0.0/16 via 10.255.254.6 dev eth2
+        - ip route replace 10.72.0.0/16 via 10.255.254.6 dev eth2
+        - ip route replace 10.73.0.0/16 via 10.255.254.6 dev eth2
+
+        # Load firewall policy.
+        - nft -f /etc/nftables.conf
+    # =========================================================
+    # HQ ROUTER
+    # =========================================================
+
+    core-r01:
+      kind: linux
+      image: lab12-frr-nft:10.6.1
+      binds:
+        - ./configs/core-r01/daemons:/etc/frr/daemons
+        - ./configs/core-r01/frr.conf:/etc/frr/frr.conf
+        - ./configs/core-r01/ospfd.conf:/etc/frr/ospfd.conf
+        - ./configs/core-r01/internal-policy.nft:/etc/frr/internal-policy.nft
+        - ./configs/core-r01/vtysh.conf:/etc/frr/vtysh.conf
+                     
+      exec:
+        - ip addr add 10.255.254.6/30 dev eth1
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route replace default via 10.255.254.5 dev eth1
+
+        # HQ VLAN 10 - USERS
+        - ip link add link eth2 name eth2.10 type vlan id 10
+        - ip addr add 10.70.10.1/24 dev eth2.10
+        - ip link set eth2.10 up
+
+        # HQ VLAN 20 - SERVERS
+        - ip link add link eth2 name eth2.20 type vlan id 20
+        - ip addr add 10.70.20.1/24 dev eth2.20
+        - ip link set eth2.20 up
+
+        # HQ VLAN 30 - ADMIN
+        - ip link add link eth2 name eth2.30 type vlan id 30
+        - ip addr add 10.70.30.1/24 dev eth2.30
+        - ip link set eth2.30 up
+
+        # HQ VLAN 99 - MANAGEMENT
+        - ip link add link eth2 name eth2.99 type vlan id 99
+        - ip addr add 10.70.99.1/24 dev eth2.99
+        - ip link set eth2.99 up
+
+        - ip link set eth2 up
+
+        # Enterprise WAN
+        - ip addr add 10.255.1.1/30 dev eth3
+        - ip addr add 10.255.2.1/30 dev eth4
+        - ip addr add 10.255.3.1/30 dev eth5
+
+        - nft -f /etc/frr/internal-policy.nft
+
+    # =========================================================
+    # HQ SWITCHING
+    # =========================================================
+
+    core-sw:
+      kind: ovs-bridge
+
+    users-sw:
+      kind: ovs-bridge
+
+    servers-sw:
+      kind: ovs-bridge
+
+    mgmt-sw:
+      kind: ovs-bridge
+
+    dmz-sw:
+      kind: ovs-bridge
+
+    # =========================================================
+    # HQ HOSTS
+    # =========================================================
+
+    user01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.10.10/24 dev eth1
+        - ip route replace default via 10.70.10.1 dev eth1
+
+    dns01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.20.10/24 dev eth1
+        - ip route replace default via 10.70.20.1 dev eth1
+        - sh -c 'while true; do printf "LAB12 DNS TCP53 SERVICE\n" | nc -l -p 53; done >/tmp/dns53.log 2>&1 &'
+
+    app01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.20.20/24 dev eth1
+        - ip route replace default via 10.70.20.1 dev eth1
+        - sh -c 'while true; do printf "LAB12 APP TCP443 SERVICE\n" | nc -l -p 443; done >/tmp/app443.log 2>&1 &'
+        - sh -c 'while true; do printf "LAB12 APP TCP22 SERVICE\n" | nc -l -p 22; done >/tmp/app22.log 2>&1 &'
+
+    admin01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.30.10/24 dev eth1
+        - ip route replace default via 10.70.30.1 dev eth1
+
+
+
+    mgmt01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.99.10/24 dev eth1
+        - ip route replace default via 10.70.99.1 dev eth1
+        - sh -c 'while true; do printf "LAB12 MGMT TCP22 SERVICE\n" | nc -l -p 22; done >/tmp/mgmt22.log 2>&1 &'
+
+
+    web01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.70.50.10/24 dev eth1
+        - ip route replace default via 10.70.50.1 dev eth1
+        - sh -c 'while true; do printf "LAB12 DMZ WEB SERVICE\n" | nc -l -p 443; done >/tmp/dmz-service.log 2>&1 &'
+
+    # =========================================================
+    # BRANCH 1 - FULL BRANCH
+    # =========================================================
+
+    branch-r01:
+      kind: linux
+      image: quay.io/frrouting/frr:10.6.1
+      binds:
+        - ./configs/branch-r01/daemons:/etc/frr/daemons
+        - ./configs/branch-r01/frr.conf:/etc/frr/frr.conf
+        - ./configs/branch-r01/ospfd.conf:/etc/frr/ospfd.conf
+        - ./configs/branch-r01/vtysh.conf:/etc/frr/vtysh.conf
+      exec:
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route del default via 172.20.20.1 dev eth0
+        # WAN toward HQ
+        - ip addr add 10.255.1.2/30 dev eth1
+
+        # VLAN 10 - USERS
+        - ip link add link eth2 name eth2.10 type vlan id 10
+        - ip addr add 10.71.10.1/24 dev eth2.10
+        - ip link set eth2.10 up
+
+        # VLAN 30 - ADMIN
+        - ip link add link eth2 name eth2.30 type vlan id 30
+        - ip addr add 10.71.30.1/24 dev eth2.30
+        - ip link set eth2.30 up
+
+        # VLAN 99 - MANAGEMENT
+        - ip link add link eth2 name eth2.99 type vlan id 99
+        - ip addr add 10.71.99.1/24 dev eth2.99
+        - ip link set eth2.99 up
+
+        - ip link set eth2 up
+
+    branch-sw1:
+      kind: ovs-bridge
+
+    br1-user01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.71.10.10/24 dev eth1
+        - ip route replace default via 10.71.10.1 dev eth1
+
+    br1-admin01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.71.30.10/24 dev eth1
+        - ip route replace default via 10.71.30.1 dev eth1
+
+    # =========================================================
+    # BRANCH 2 - MINIMAL
+    # =========================================================
+
+    branch-r02:
+      kind: linux
+      image: quay.io/frrouting/frr:10.6.1
+      binds:
+        - ./configs/branch-r02/daemons:/etc/frr/daemons
+        - ./configs/branch-r02/frr.conf:/etc/frr/frr.conf
+        - ./configs/branch-r02/ospfd.conf:/etc/frr/ospfd.conf
+        - ./configs/branch-r02/vtysh.conf:/etc/frr/vtysh.conf
+      exec:
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route del default via 172.20.20.1 dev eth0
+        - ip addr add 10.255.2.2/30 dev eth1
+        - ip addr add 10.72.10.1/24 dev eth2
+
+    br2-user01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.72.10.10/24 dev eth1
+        - ip route replace default via 10.72.10.1 dev eth1
+
+    # =========================================================
+    # BRANCH 3 - MINIMAL
+    # =========================================================
+
+    branch-r03:
+      kind: linux
+      image: quay.io/frrouting/frr:10.6.1
+      binds:
+        - ./configs/branch-r03/daemons:/etc/frr/daemons
+        - ./configs/branch-r03/frr.conf:/etc/frr/frr.conf
+        - ./configs/branch-r03/ospfd.conf:/etc/frr/ospfd.conf
+        - ./configs/branch-r03/vtysh.conf:/etc/frr/vtysh.conf
+      exec:
+        - sysctl -w net.ipv4.ip_forward=1
+        - ip route del default via 172.20.20.1 dev eth0
+        - ip addr add 10.255.3.2/30 dev eth1
+        - ip addr add 10.73.10.1/24 dev eth2
+
+    br3-user01:
+      kind: linux
+      image: alpine:3.20
+      exec:
+        - ip addr add 10.73.10.10/24 dev eth1
+        - ip route replace default via 10.73.10.1 dev eth1
+
+  links:
+
+    # Internet / perimeter
+    - endpoints: ["internet01:eth1", "isp01:eth1"]
+    - endpoints: ["isp01:eth2", "edge-r01:eth1"]
+    - endpoints: ["edge-r01:eth2", "firewall01:eth1"]
+    - endpoints: ["firewall01:eth2", "core-r01:eth1"]
+
+    # HQ core trunk
+    - endpoints: ["core-r01:eth2", "core-sw:core-r01"]
+
+    # HQ USERS
+    - endpoints: ["core-sw:users-trunk", "users-sw:core-trunk"]
+    - endpoints: ["users-sw:user01", "user01:eth1"]
+
+    # HQ SERVERS
+    - endpoints: ["core-sw:servers-trunk", "servers-sw:servers-core"]
+    - endpoints: ["servers-sw:dns01", "dns01:eth1"]
+    - endpoints: ["servers-sw:app01", "app01:eth1"]
+
+    # HQ ADMIN / MANAGEMENT
+    - endpoints: ["core-sw:mgmt-trunk", "mgmt-sw:mgmt-core"]
+    - endpoints: ["mgmt-sw:admin01", "admin01:eth1"]
+    - endpoints: ["mgmt-sw:mgmt01", "mgmt01:eth1"]
+
+    # DMZ
+    - endpoints: ["firewall01:eth3", "dmz-sw:firewall-dmz"]
+    - endpoints: ["dmz-sw:web01", "web01:eth1"]
+
+    # HQ <-> Branch WAN
+    - endpoints: ["core-r01:eth3", "branch-r01:eth1"]
+    - endpoints: ["core-r01:eth4", "branch-r02:eth1"]
+    - endpoints: ["core-r01:eth5", "branch-r03:eth1"]
+
+    # Branch 1 switching
+    - endpoints: ["branch-r01:eth2", "branch-sw1:br1-router"]
+    - endpoints: ["branch-sw1:br1-user01", "br1-user01:eth1"]
+    - endpoints: ["branch-sw1:br1-admin01", "br1-admin01:eth1"]
+
+    # Branch 2
+    - endpoints: ["branch-r02:eth2", "br2-user01:eth1"]
+
+    # Branch 3
+    - endpoints: ["branch-r03:eth2", "br3-user01:eth1"]

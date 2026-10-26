@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Containerlab
+clab-*/
+**/clab-*/
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+
+# Virtual machines
+*.qcow2
+*.vdi
+*.vmdk
+
+# Editor
+.vscode/
