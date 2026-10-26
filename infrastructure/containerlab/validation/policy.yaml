@@ -3,13 +3,13 @@
     {
       "name": "OSPF HQ HAS 3 FULL NEIGHBORS",
       "type": "ospf_neighbors",
-      "container": "clab-lab12-core-r01",
+      "container": "clab-esm-core-r01",
       "expected_full": 3
     },
     {
       "name": "HQ USER -> DNS TCP/53",
       "type": "tcp",
-      "source": "clab-lab12-user01",
+      "source": "clab-esm-user01",
       "destination": "10.70.20.10",
       "port": 53,
       "expected": "allow",
@@ -18,7 +18,7 @@
     {
       "name": "HQ USER -> APP TCP/443",
       "type": "tcp",
-      "source": "clab-lab12-user01",
+      "source": "clab-esm-user01",
       "destination": "10.70.20.20",
       "port": 443,
       "expected": "allow",
@@ -27,7 +27,7 @@
     {
       "name": "HQ USER -> APP TCP/22",
       "type": "tcp",
-      "source": "clab-lab12-user01",
+      "source": "clab-esm-user01",
       "destination": "10.70.20.20",
       "port": 22,
       "expected": "deny"
@@ -35,7 +35,7 @@
     {
       "name": "HQ USER -> MANAGEMENT TCP/22",
       "type": "tcp",
-      "source": "clab-lab12-user01",
+      "source": "clab-esm-user01",
       "destination": "10.70.99.10",
       "port": 22,
       "expected": "deny"
@@ -43,7 +43,7 @@
     {
       "name": "HQ ADMIN -> MANAGEMENT TCP/22",
       "type": "tcp",
-      "source": "clab-lab12-admin01",
+      "source": "clab-esm-admin01",
       "destination": "10.70.99.10",
       "port": 22,
       "expected": "allow",
@@ -52,7 +52,7 @@
     {
       "name": "BR1 USER -> HQ DNS TCP/53",
       "type": "tcp",
-      "source": "clab-lab12-br1-user01",
+      "source": "clab-esm-br1-user01",
       "destination": "10.70.20.10",
       "port": 53,
       "expected": "allow",
@@ -61,7 +61,7 @@
     {
       "name": "BR3 USER -> HQ APP TCP/443",
       "type": "tcp",
-      "source": "clab-lab12-br3-user01",
+      "source": "clab-esm-br3-user01",
       "destination": "10.70.20.20",
       "port": 443,
       "expected": "deny"
@@ -69,7 +69,7 @@
     {
       "name": "HQ USER -> INTERNET TCP/443",
       "type": "tcp",
-      "source": "clab-lab12-user01",
+      "source": "clab-esm-user01",
       "destination": "198.51.100.10",
       "port": 443,
       "expected": "allow",
@@ -78,7 +78,7 @@
     {
       "name": "BR1 USER -> INTERNET TCP/443",
       "type": "tcp",
-      "source": "clab-lab12-br1-user01",
+      "source": "clab-esm-br1-user01",
       "destination": "198.51.100.10",
       "port": 443,
       "expected": "allow",
@@ -87,7 +87,7 @@
     {
       "name": "INTERNET -> DMZ TCP/443 VIA DNAT",
       "type": "tcp",
-      "source": "clab-lab12-internet01",
+      "source": "clab-esm-internet01",
       "destination": "203.0.113.2",
       "port": 443,
       "expected": "allow",
@@ -96,7 +96,7 @@
     {
       "name": "DMZ -> INTERNAL DNS TCP/53",
       "type": "tcp",
-      "source": "clab-lab12-web01",
+      "source": "clab-esm-web01",
       "destination": "10.70.20.10",
       "port": 53,
       "expected": "deny"

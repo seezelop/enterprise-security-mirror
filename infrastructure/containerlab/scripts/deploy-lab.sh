@@ -2,9 +2,14 @@
 
 set -euo pipefail
 
+if docker ps --filter 'name=clab-lab12-' --format '{{.Names}}' | grep -q .; then
+    echo "ERROR: Lab 12 original sigue activo. No desplegar ESM." >&2
+    exit 1
+fi
+
 echo "[INFO] BUILDING CUSTOM FRR + NFTABLES IMAGE..."
 docker build \
-    -t lab12-frr-nft:10.6.1 \
+    -t esm-frr-nft:10.6.1 \
     -f containers/frr-nft/Dockerfile .
 
 echo "[INFO] REMOVING PREVIOUS CONTAINERLAB DEPLOYMENT..."
@@ -14,7 +19,7 @@ echo "[INFO] CLEANING LAB 12 OVS STATE..."
 ./scripts/cleanup-ovs.sh
 
 echo "[INFO] REMOVING GENERATED CONTAINERLAB STATE..."
-sudo rm -rf clab-lab12
+sudo rm -rf clab-esm
 
 echo "[INFO] CREATING OVS BRIDGES..."
 ./scripts/setup-ovs.sh

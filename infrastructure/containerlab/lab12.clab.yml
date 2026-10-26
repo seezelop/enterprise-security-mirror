@@ -1,4 +1,9 @@
-name: lab12
+name: esm
+
+mgmt:
+  network: esm-mgmt
+  ipv4-subnet: auto
+  ipv6-subnet: auto
 
 topology:
   nodes:
@@ -62,7 +67,7 @@ topology:
 
     core-r01:
       kind: linux
-      image: lab12-frr-nft:10.6.1
+      image: esm-frr-nft:10.6.1
       binds:
         - ./configs/core-r01/daemons:/etc/frr/daemons
         - ./configs/core-r01/frr.conf:/etc/frr/frr.conf
@@ -108,19 +113,19 @@ topology:
     # HQ SWITCHING
     # =========================================================
 
-    core-sw:
+    esm-core-sw:
       kind: ovs-bridge
 
-    users-sw:
+    esm-users-sw:
       kind: ovs-bridge
 
-    servers-sw:
+    esm-servers-sw:
       kind: ovs-bridge
 
-    mgmt-sw:
+    esm-mgmt-sw:
       kind: ovs-bridge
 
-    dmz-sw:
+    esm-dmz-sw:
       kind: ovs-bridge
 
     # =========================================================
@@ -191,7 +196,7 @@ topology:
         - ./configs/branch-r01/vtysh.conf:/etc/frr/vtysh.conf
       exec:
         - sysctl -w net.ipv4.ip_forward=1
-        - ip route del default via 172.20.20.1 dev eth0
+        - ip -4 route del default dev eth0
         # WAN toward HQ
         - ip addr add 10.255.1.2/30 dev eth1
 
@@ -212,7 +217,7 @@ topology:
 
         - ip link set eth2 up
 
-    branch-sw1:
+    esm-branch-sw1:
       kind: ovs-bridge
 
     br1-user01:
@@ -243,7 +248,7 @@ topology:
         - ./configs/branch-r02/vtysh.conf:/etc/frr/vtysh.conf
       exec:
         - sysctl -w net.ipv4.ip_forward=1
-        - ip route del default via 172.20.20.1 dev eth0
+        - ip -4 route del default dev eth0
         - ip addr add 10.255.2.2/30 dev eth1
         - ip addr add 10.72.10.1/24 dev eth2
 
@@ -268,7 +273,7 @@ topology:
         - ./configs/branch-r03/vtysh.conf:/etc/frr/vtysh.conf
       exec:
         - sysctl -w net.ipv4.ip_forward=1
-        - ip route del default via 172.20.20.1 dev eth0
+        - ip -4 route del default dev eth0
         - ip addr add 10.255.3.2/30 dev eth1
         - ip addr add 10.73.10.1/24 dev eth2
 
@@ -288,25 +293,25 @@ topology:
     - endpoints: ["firewall01:eth2", "core-r01:eth1"]
 
     # HQ core trunk
-    - endpoints: ["core-r01:eth2", "core-sw:core-r01"]
+    - endpoints: ["core-r01:eth2", "esm-core-sw:e-core-r01"]
 
     # HQ USERS
-    - endpoints: ["core-sw:users-trunk", "users-sw:core-trunk"]
-    - endpoints: ["users-sw:user01", "user01:eth1"]
+    - endpoints: ["esm-core-sw:e-users-trunk", "esm-users-sw:e-core-trunk"]
+    - endpoints: ["esm-users-sw:e-user01", "user01:eth1"]
 
     # HQ SERVERS
-    - endpoints: ["core-sw:servers-trunk", "servers-sw:servers-core"]
-    - endpoints: ["servers-sw:dns01", "dns01:eth1"]
-    - endpoints: ["servers-sw:app01", "app01:eth1"]
+    - endpoints: ["esm-core-sw:e-servers-trunk", "esm-servers-sw:e-servers-core"]
+    - endpoints: ["esm-servers-sw:e-dns01", "dns01:eth1"]
+    - endpoints: ["esm-servers-sw:e-app01", "app01:eth1"]
 
     # HQ ADMIN / MANAGEMENT
-    - endpoints: ["core-sw:mgmt-trunk", "mgmt-sw:mgmt-core"]
-    - endpoints: ["mgmt-sw:admin01", "admin01:eth1"]
-    - endpoints: ["mgmt-sw:mgmt01", "mgmt01:eth1"]
+    - endpoints: ["esm-core-sw:e-mgmt-trunk", "esm-mgmt-sw:e-mgmt-core"]
+    - endpoints: ["esm-mgmt-sw:e-admin01", "admin01:eth1"]
+    - endpoints: ["esm-mgmt-sw:e-mgmt01", "mgmt01:eth1"]
 
     # DMZ
-    - endpoints: ["firewall01:eth3", "dmz-sw:firewall-dmz"]
-    - endpoints: ["dmz-sw:web01", "web01:eth1"]
+    - endpoints: ["firewall01:eth3", "esm-dmz-sw:e-firewall-dmz"]
+    - endpoints: ["esm-dmz-sw:e-web01", "web01:eth1"]
 
     # HQ <-> Branch WAN
     - endpoints: ["core-r01:eth3", "branch-r01:eth1"]
@@ -314,9 +319,9 @@ topology:
     - endpoints: ["core-r01:eth5", "branch-r03:eth1"]
 
     # Branch 1 switching
-    - endpoints: ["branch-r01:eth2", "branch-sw1:br1-router"]
-    - endpoints: ["branch-sw1:br1-user01", "br1-user01:eth1"]
-    - endpoints: ["branch-sw1:br1-admin01", "br1-admin01:eth1"]
+    - endpoints: ["branch-r01:eth2", "esm-branch-sw1:e-br1-router"]
+    - endpoints: ["esm-branch-sw1:e-br1-user01", "br1-user01:eth1"]
+    - endpoints: ["esm-branch-sw1:e-br1-admin01", "br1-admin01:eth1"]
 
     # Branch 2
     - endpoints: ["branch-r02:eth2", "br2-user01:eth1"]
