@@ -91,11 +91,37 @@ for script in (setup, cleanup, switching):
 # Protección del despliegue
 deploy = read("scripts/deploy-lab.sh")
 
-check("clab-esm" in deploy, "Nombre de despliegue incorrecto")
-check("clab-lab12-" in deploy and "exit 1" in deploy,
-      "Falta protección del Lab 12")
-check("rm -rf clab-lab12" not in deploy,
-      "Referencia destructiva al Lab 12")
+check(
+    "./scripts/preflight.sh" in deploy,
+    "El despliegue no ejecuta el preflight"
+)
+
+check(
+    "clab-lab12-" in deploy and "exit 1" in deploy,
+    "Falta protección del Lab 12"
+)
+
+check(
+    "containerlab deploy -t lab12.clab.yml" in deploy,
+    "Falta el despliegue de la topología ESM"
+)
+
+check(
+    "containerlab destroy" not in deploy,
+    "El despliegue contiene una operación destructiva"
+)
+
+check(
+    "cleanup-ovs.sh" not in deploy,
+    "El despliegue ejecuta limpieza automática de OVS"
+)
+
+check(
+    "rm -rf" not in deploy,
+    "El despliegue contiene una eliminación recursiva"
+)
+
+
 
 # Pruebas funcionales definidas
 policy = json.loads(read("validation/policy.yaml"))
@@ -117,3 +143,38 @@ print("PASS: Bridges e interfaces OVS")
 print("PASS: Scripts de infraestructura")
 print("PASS: Protección del Lab 12 original")
 print("PASS: 12 definiciones de pruebas")
+
+# Validaciones del procedimiento de despliegue seguro
+preflight = read("scripts/preflight.sh")
+
+check(
+    deploy.index("./scripts/preflight.sh")
+    < deploy.index("docker build")
+    < deploy.index("./scripts/setup-ovs.sh")
+    < deploy.index("containerlab deploy"),
+    "El orden de despliegue es incorrecto"
+)
+
+for required in (
+    "docker ps -a",
+    "docker network inspect esm-mgmt",
+    "ovs-vsctl br-exists",
+    "ip link show dev",
+    "clab-esm",
+):
+    check(
+        required in preflight,
+        f"Falta comprobación en preflight: {required}"
+    )
+
+for forbidden in (
+    "containerlab destroy",
+    "cleanup-ovs.sh",
+    "rm -rf",
+):
+    check(
+        forbidden not in deploy,
+        f"Operación no permitida en deploy: {forbidden}"
+    )
+
+print("PASS: Preflight y orden de despliegue seguro")
