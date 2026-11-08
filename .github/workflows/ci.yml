@@ -58,3 +58,6 @@ jobs:
       - name: Validate ESM infrastructure isolation
         shell: bash
         run: python3 tests/check_infrastructure.py
+
+      - name: Test OSPF convergence
+        run: python3 -m unittest discover -s tests -p "test_*.py" -v
