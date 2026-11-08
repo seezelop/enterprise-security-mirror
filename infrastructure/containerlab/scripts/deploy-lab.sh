@@ -1,36 +1,34 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+echo "[INFO] Checking original Lab 12 deployment..."
+
 if docker ps --filter 'name=clab-lab12-' --format '{{.Names}}' | grep -q .; then
-    echo "ERROR: Lab 12 original sigue activo. No desplegar ESM." >&2
+    echo "[ERROR] Lab 12 original sigue activo. No desplegar ESM." >&2
     exit 1
 fi
 
-echo "[INFO] BUILDING CUSTOM FRR + NFTABLES IMAGE..."
+echo "[INFO] Running ESM preflight..."
+./scripts/preflight.sh
+
+echo "[INFO] Building ESM FRR + nftables image..."
 docker build \
     -t esm-frr-nft:10.6.1 \
     -f containers/frr-nft/Dockerfile .
 
-echo "[INFO] REMOVING PREVIOUS CONTAINERLAB DEPLOYMENT..."
-sudo containerlab destroy -t lab12.clab.yml 2>/dev/null || true
-
-echo "[INFO] CLEANING LAB 12 OVS STATE..."
-./scripts/cleanup-ovs.sh
-
-echo "[INFO] REMOVING GENERATED CONTAINERLAB STATE..."
-sudo rm -rf clab-esm
-
-echo "[INFO] CREATING OVS BRIDGES..."
+echo "[INFO] Creating ESM Open vSwitch bridges..."
 ./scripts/setup-ovs.sh
 
-echo "[INFO] DEPLOYING LAB 12..."
+echo "[INFO] Deploying ESM Containerlab topology..."
 sudo containerlab deploy -t lab12.clab.yml
 
-echo "[INFO] APPLYING VLAN CONFIGURATION..."
+echo "[INFO] Configuring ESM VLANs..."
 ./scripts/configure-switching.sh
 
-echo "[INFO] RUNNING SECURITY POLICY VALIDATION..."
+echo "[INFO] Running baseline security policy tests..."
 python3 validation/test_policy.py
 
-echo "[INFO] LAB 12 DEPLOYMENT COMPLETE."
+echo "[INFO] ESM deployment completed."
