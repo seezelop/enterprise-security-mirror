@@ -54,3 +54,7 @@ jobs:
             bash -n "$script"
           done
           echo 'PASS: Python and shell syntax checks'
+
+      - name: Validate ESM infrastructure isolation
+        shell: bash
+        run: python3 tests/check_infrastructure.py
