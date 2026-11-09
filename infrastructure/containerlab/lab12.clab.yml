@@ -176,13 +176,12 @@ topology:
 
     web01:
       kind: linux
-      image: alpine:3.20
+      image: esm-web-portal:0.2
       exec:
         - ip addr add 10.70.50.10/24 dev eth1
         - ip route replace default via 10.70.50.1 dev eth1
-        - sh -c 'while true; do printf "LAB12 DMZ WEB SERVICE\n" | nc -l -p 443; done >/tmp/dmz-service.log 2>&1 &'
 
-    # =========================================================
+ # =========================================================
     # BRANCH 1 - FULL BRANCH
     # =========================================================
 

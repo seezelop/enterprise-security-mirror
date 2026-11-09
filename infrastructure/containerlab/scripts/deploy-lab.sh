@@ -28,17 +28,9 @@ sudo containerlab deploy -t lab12.clab.yml
 echo "[INFO] Configuring ESM VLANs..."
 ./scripts/configure-switching.sh
 
-echo "[INFO] Waiting for OSPF convergence..."
-python3 validation/wait_for_ospf.py --timeout 120 --interval 5
 
-echo "[INFO] Waiting for OSPF convergence..."
-python3 validation/wait_for_ospf.py --timeout 120 --interval 5
 
-echo "[INFO] Waiting for OSPF convergence..."
-python3 validation/wait_for_ospf.py --timeout 120 --interval 5
 
-echo "[INFO] Waiting for OSPF convergence..."
-python3 validation/wait_for_ospf.py --timeout 120 --interval 5
 
 echo "[INFO] Waiting for OSPF convergence..."
 python3 validation/wait_for_ospf.py --timeout 120 --interval 5

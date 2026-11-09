@@ -86,12 +86,13 @@
     },
     {
       "name": "INTERNET -> DMZ TCP/443 VIA DNAT",
-      "type": "tcp",
+      "type": "https",
       "source": "clab-esm-internet01",
       "destination": "203.0.113.2",
       "port": 443,
       "expected": "allow",
-      "banner": "LAB12 DMZ WEB SERVICE"
+      "banner": "\"status\":\"ok\"",
+      "path": "/health"
     },
     {
       "name": "DMZ -> INTERNAL DNS TCP/53",
