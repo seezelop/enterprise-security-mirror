@@ -19,6 +19,12 @@ docker build \
     -t esm-frr-nft:10.6.1 \
     -f containers/frr-nft/Dockerfile .
 
+echo "[INFO] Building ESM FastAPI portal image..."
+docker build \
+    -t esm-web-portal:0.2 \
+    -f "$ROOT/../../scenarios/esc-001/portal/Dockerfile" \
+    "$ROOT/../../scenarios/esc-001/portal"
+
 echo "[INFO] Creating ESM Open vSwitch bridges..."
 ./scripts/setup-ovs.sh
 

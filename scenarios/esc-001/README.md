@@ -2,7 +2,7 @@
 
 ## Case 01: Broken Object Level Authorization (BOLA)
 
-**Status:** Local laboratory completed. DMZ integration pending.
+**Status:** ESC-001 completed: local BOLA case, remediated FastAPI deployed in the simulated DMZ, live network validation and detection-coverage assessment. See [REPRODUCE.md](REPRODUCE.md) for clean-host instructions.
 
 ### 1. Objective
 
@@ -18,7 +18,7 @@ incident response process.
 - JSONL application security logs
 - Python detection script
 
-The application currently runs locally on Ubuntu.
+The initial vulnerability experiment was performed locally on Ubuntu. The corrected application now runs as `web01` in the Containerlab DMZ.
 
 ### 3. Attack scenario
 
@@ -123,11 +123,9 @@ fields. It is not an independent SIEM or network-level detection.
 
 All screenshots must be sanitized before publication.
 
-### 8. Next Stage
+### 8. Reproducing ESC-001
 
-Deploy the enterprise portal in the Containerlab DMZ and investigate
-the relationship between application activity, firewall policies,
-network telemetry and security detection.
+See [REPRODUCE.md](REPRODUCE.md) for the current DMZ deployment, validation, authorized/denied access tests, safe synthetic BOLA detection tests and teardown. The vulnerable HTTP 200 behavior was reproduced during initial development but is not supplied as an enabled vulnerable service in the current image.
 
 ### 9. References
 
