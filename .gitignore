@@ -23,3 +23,9 @@ clab-*/
 
 # Editor
 .vscode/
+
+# ESC-001 runtime files
+scenarios/esc-001/portal/logs/
+scenarios/esc-001/portal/.venv/
+__pycache__/
+*.pyc
