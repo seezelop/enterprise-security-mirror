@@ -16,4 +16,4 @@ sudo ip link set esm-mgmt-sw up
 sudo ip link set esm-dmz-sw up
 sudo ip link set esm-branch-sw1 up
 
-echo "[+] LAB 12 Open vSwitch bridges are ready."
+echo "[+] ESM Open vSwitch bridges are ready."
