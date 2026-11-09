@@ -120,9 +120,6 @@ def run_test(test):
         if test_type == "ospf_neighbors":
             return test_ospf_neighbors(test)
 
-        return False, f"UNSUPPORTED TEST TYPE: {test_type}"
-
-
         if test_type == "https":
             command = [
                 "docker",
@@ -145,9 +142,10 @@ def run_test(test):
 
             return passed, stdout or stderr or f"EXIT={returncode}"
 
+        return False, f"UNSUPPORTED TEST TYPE: {test_type}"
+
     except Exception as exc:
         return False, str(exc)
-
 
 def main():
     passed_count = 0

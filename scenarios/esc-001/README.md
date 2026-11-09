@@ -186,3 +186,41 @@ The application uses simplified authentication and a
 self-signed certificate.
 
 The deployment is intended exclusively for an isolated laboratory.
+
+## Layer 3: Detection Coverage and Limitations
+
+### Objective
+
+Evaluate how incomplete application telemetry affects BOLA detection.
+
+### Experiment
+
+Two simulated customer access events were analyzed:
+
+1. Unauthorized access with complete identity and ownership fields.
+2. Access event missing the `assigned_customer` field.
+
+### Results
+
+- Complete event: BOLA alert generated.
+- Incomplete event: No BOLA alert generated.
+
+### Defensive Finding
+
+The detector requires reliable identity and resource ownership
+information to identify unauthorized object access.
+
+Missing audit fields create detection blind spots.
+
+### Recommended Improvement
+
+Validate the completeness of security audit events and generate
+a separate telemetry-quality warning when required fields are missing.
+
+### Conclusion
+
+Network connectivity, application authorization and security
+detection must be evaluated independently.
+
+Successful network-level communication does not establish that
+application activity is authorized.
