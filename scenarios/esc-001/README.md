@@ -143,3 +143,46 @@ The application is not production-ready.
 
 The initial exercise was performed locally, not against a publicly
 accessible service. No real-world incident occurred.
+
+## DMZ Integration
+
+The FastAPI portal was deployed as `web01` inside the
+Enterprise Security Mirror Containerlab topology.
+
+### Architecture
+
+internet01 -> isp01 -> edge-r01 -> firewall01 -> web01
+
+- Application: FastAPI
+- DMZ address: 10.70.50.10
+- Published address: 203.0.113.2
+- Protocol: HTTPS/TCP 443
+- Firewall: nftables with DNAT
+- TLS: self-signed certificate for laboratory use
+
+### Validation Results
+
+- Containerlab baseline: 12/12 PASS
+- OSPF: 3/3 FULL neighbors
+- HTTPS /health: successful
+- Authentication through DNAT: successful
+- Unauthorized customer access: HTTP 403
+- Application audit event: customer_access / denied
+
+### Defensive Findings
+
+The firewall validates network-level access using addresses,
+protocols, ports and connection states.
+
+The application provides the identity and authorization context
+needed to distinguish legitimate customer access from BOLA.
+
+Because TLS terminates at web01, the firewall does not inspect
+the encrypted HTTP request contents.
+
+### Limitations
+
+The application uses simplified authentication and a
+self-signed certificate.
+
+The deployment is intended exclusively for an isolated laboratory.

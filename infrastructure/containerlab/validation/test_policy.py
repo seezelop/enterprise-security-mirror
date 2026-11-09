@@ -122,6 +122,29 @@ def run_test(test):
 
         return False, f"UNSUPPORTED TEST TYPE: {test_type}"
 
+
+        if test_type == "https":
+            command = [
+                "docker",
+                "exec",
+                test["source"],
+                "wget",
+                "--no-check-certificate",
+                "-q",
+                "-O",
+                "-",
+                f'https://{test["destination"]}:{test["port"]}{test["path"]}',
+            ]
+
+            returncode, stdout, stderr = run_command(command)
+
+            passed = (
+                returncode == 0
+                and test["banner"] in stdout
+            )
+
+            return passed, stdout or stderr or f"EXIT={returncode}"
+
     except Exception as exc:
         return False, str(exc)
 
