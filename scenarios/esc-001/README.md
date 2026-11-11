@@ -1,5 +1,19 @@
 # ESC-001: Web Application Security
 
+## Scenario Overview
+
+**Business problem.** A fictional company publishes a customer portal through a segmented DMZ. Network access to HTTPS is permitted, but a valid session must not grant access to another customer's records.
+
+**What we built and protected.** We deployed an enterprise network in Containerlab with HQ, three branches, OSPF, VLAN segmentation and nftables policies. A FastAPI HTTPS portal in the DMZ serves synthetic customer data with authentication and object-level authorization.
+
+**What we simulated.** During the initial local exercise, we deliberately disabled the object-level authorization check. An authenticated customer requested another customer's record and received HTTP 200, reproducing Broken Object Level Authorization (OWASP API1:2023).
+
+**How we detected and responded.** Python analysis of JSONL application events flagged a successful cross-customer access. We restored server-side authorization, repeated the request and confirmed HTTP 403. The corrected portal was subsequently deployed in the Containerlab DMZ and network policy checks passed.
+
+**What we learned.** Allowing an HTTPS connection at the firewall does not establish that each application request is authorized. Application audit context is necessary for BOLA detection, and missing ownership fields can create detection blind spots. The investigation and corrective validation were documented using NIST SP 800-61 Rev. 3 as a reference.
+
+**Reproduce:** [Deployment, verification and synthetic detection exercises](REPRODUCE.md). The vulnerable HTTP 200 behavior is documented from the initial local exercise; the published container runs the corrected application.
+
 ## Case 01: Broken Object Level Authorization (BOLA)
 
 **Status:** ESC-001 completed: local BOLA case, remediated FastAPI deployed in the simulated DMZ, live network validation and detection-coverage assessment. See [REPRODUCE.md](REPRODUCE.md) for clean-host instructions.
