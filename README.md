@@ -6,6 +6,16 @@ Defensive cybersecurity lab implementing a fictional enterprise network with HQ,
 
 **Planned, not deployed:** ESC-002 Identity & Privilege Abuse; ESC-003 Lateral Movement & Resilience. No Active Directory, production database, SIEM or separate IDS is deployed in ESC-001.
 
+## ESM Methodology: Build, Attack, Break, Detect, Fix & Retest
+
+**Build → Attack → Break → Detect → Fix → Retest**
+
+ESM follows an iterative defensive security methodology. Each scenario starts with a functional enterprise environment and documented security controls. We then introduce a controlled weakness, reproduce adversarial behavior in an isolated and authorized lab, investigate the resulting evidence, apply corrective measures and repeat the tests.
+
+The goal is not simply to deploy security tools, but to demonstrate **what they protect, what they detect, where they fail and whether the improvements are effective**. Each scenario documents reproducible tests, evidence, detection limitations and automated regression checks.
+
+The methodology is developed in three complementary layers: **build and observe**, **attack and defend**, and **explore limits and validate**. See the [original project plan](PROJECT_PLAN.md#1-propósito) for the detailed methodology and scope.
+
 ## Start here
 
 For a clean Ubuntu/Linux installation, requirements, build/deployment, application checks, safe teardown and limitations, follow:
