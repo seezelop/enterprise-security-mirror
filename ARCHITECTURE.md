@@ -8,6 +8,20 @@
 
 > **Principio rector:** una sola empresa simulada, tres bloques transversales y tres escenarios espejo. Cada escenario debe probar qué ocurrió, qué control previno o detectó la actividad, qué quedó invisible y cómo se verificó una mejora. La infraestructura de redes ya implementada en Lab 12 es el punto de partida, no algo a rehacer.
 
+## ESC-002 implementation decision (2026-11-15)
+
+**Decision:** The domain controller for ESC-002 will be **Microsoft Windows Server 2022 running Active Directory Domain Services (AD DS)** inside a **KVM/libvirt VM** on the Ubuntu host, rather than Samba AD DC in a Linux container. ESM's existing HQ/branch topology remains in **Containerlab + Open vSwitch**. **Wazuh components will be tested using Docker**, with a Wazuh agent on Windows Server for native security-event collection; Python and GitHub Actions provide correlation, offline detection/policy tests and change validation.
+
+**Why:** ESC-002 must build on the Windows Server AD DS, DNS, Kerberos and native Windows Security Event work documented in `blue-team-labs` Labs 11 and 12. Samba AD DC would support domain identity and Kerberos/LDAP use cases, but does not provide Windows Server's AD DS environment, native Windows Security event logs or equivalent Microsoft GPO administration.
+
+**Proposed network placement (not deployed):** place the DC in HQ SERVERS VLAN 20 (`10.70.20.0/24`), with client access from approved USERS/ADMIN segments. No static address, domain name or bridge attachment has been finalized. VM-to-OVS integration must preserve data-plane filtering and avoid Docker management-network bypass. Review and explicitly test AD-related DNS UDP/TCP 53, Kerberos TCP/UDP 88, LDAP TCP/UDP 389, SMB TCP 445, RPC endpoint mapping TCP 135 and required dynamic RPC traffic as dictated by actual use; do not broadly open ports without tests or documented rationale.
+
+**Resource risk:** approximately 7 GiB RAM on the host; full Wazuh Docker stack and Windows Server VM running with ESM are not yet validated. Stage deployments and measure RAM, swap, responsiveness and detection latency; do not call partial Wazuh Manager deployment a full SIEM. This is an architecture **decision and implementation plan**, not evidence of a completed deployment.
+
+**Validation and methodology:** first revalidate the existing ESM network; then verify AD DS and domain connectivity, authentication and Windows Security telemetry, Wazuh ingestion/detections, deliberate privilege-control failure, remediation, and repeat attack tests. CI performs static/offline and synthetic fixture regression checks, while full network and Windows integration tests run locally. MITRE ATT&CK mappings need event/behavior evidence and should not be assigned mechanically.
+
+**Decision precedence:** this dated section supersedes earlier v0.2 references suggesting optional AD, all-Docker Samba AD or uncommitted IP/domain choices. Other future items (FreeRADIUS, 802.1X, IPsec, redundancy) remain in the backlog. Original sections below are historical design material.
+
 ## 1. Decisiones y estado
 
 | Decisión | Estado |
