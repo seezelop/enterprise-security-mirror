@@ -6,6 +6,18 @@ Defensive cybersecurity lab implementing a fictional enterprise network with HQ,
 
 **Planned, not deployed:** ESC-002 Identity & Privilege Abuse; ESC-003 Lateral Movement & Resilience. No Active Directory, production database, SIEM or separate IDS is deployed in ESC-001.
 
+## ESC-002: Active Directory Identity & Privilege Abuse (planned)
+
+ESC-002 will extend the completed Windows domain exercises in [blue-team-labs](https://github.com/seezelop/blue-team-labs/tree/main/labs/11-active-directory-security-events) and [Lab 12: Privilege Changes](https://github.com/seezelop/blue-team-labs/tree/main/labs/12-active-directory-privilege-changes).
+
+**Architecture decision (2026-11-15):** use **Microsoft Windows Server 2022 Active Directory Domain Services (AD DS)** in a Linux-hosted **KVM/libvirt virtual machine**, connected to the existing Containerlab/Open vSwitch enterprise topology. Run **Wazuh using Docker** where host resources allow; use a Wazuh agent on Windows Server for native Windows Security events. **Samba AD DC is not the selected domain controller**: it is not a substitute for Microsoft AD DS, native Windows Security logs or full Windows GPO behavior.
+
+Planned learning objectives: AD DS, DNS, Kerberos, LDAP, organizational units, groups, Group Policy, least privilege, Windows Security event correlation, detection with Wazuh/Python, MITRE ATT&CK mapping where supported, remediation and repeat testing. Security+ SY0-701 objectives include AAA, IAM, hardening, monitoring, incident response and automation. GitHub Actions will validate offline policy/detection regression tests; privileged Windows/Containerlab integration tests remain local.
+
+**Deployment status:** planned, **not yet implemented**. The host has approximately 7 GiB RAM, below the recommended host memory for a full Wazuh Docker single-node stack. Feasibility and service co-existence must be measured; phased deployment is allowed and must be documented. No claim is made that AD DS and the complete Wazuh stack currently run together.
+
+See [ESC-002 implementation decision](ARCHITECTURE.md#esc-002-implementation-decision-2026-11-15) and [updated project scope](PROJECT_PLAN.md#esc-002-scope-update-2026-11-15).
+
 ## ESM Methodology: Build, Attack, Break, Detect, Fix & Retest
 
 **Build → Attack → Break → Detect → Fix → Retest**
