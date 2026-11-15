@@ -5,6 +5,16 @@
 **Repositorio previsto:** `enterprise-security-mirror` (todavía no creado ni modificado por este documento).  
 **Proyecto precedente:** [Lab 12, Enterprise Network Security Architecture & Validation](https://github.com/seezelop/network-security-labs/tree/main/labs/12-enterprise-network-security).
 
+## ESC-002 scope update (2026-11-15)
+
+**Current decision, superseding earlier candidate implementations for ESC-002:** implement **Microsoft Active Directory Domain Services on Windows Server 2022 in a KVM/libvirt VM** connected to ESM's existing Containerlab/Open vSwitch network. **Wazuh will be deployed using Docker**, initially in a resource-aware, staged configuration, with a Windows Wazuh agent providing native Windows Security logs when available. The earlier idea of an all-Docker lab using Samba AD DC was considered but **not selected** because ESC-002 is intended to deepen Microsoft AD DS, GPO and Windows event investigations already exercised in `blue-team-labs` (Labs 11 and 12).
+
+The planned flow remains **Build → Attack → Break → Detect → Fix → Retest**: establish domain identity and privileged access baselines; simulate authorized, isolated privilege misuse; correlate native events (for example 4728 and 4672) in Wazuh/Python; remediate; and repeat tests. Map to MITRE ATT&CK only when observed behavior supports the technique. Cover Security+ SY0-701 AAA, IAM, hardening, monitoring, incident response, change management and automation.
+
+**Constraints and verification:** the Ubuntu host has around 7 GiB RAM. Windows Server VM + full Docker Wazuh stack + ESM topology have **not** been demonstrated to work simultaneously. Measure capacity before adding services; allow sequential execution and preserve evidence. Verify VM-to-OVS VLAN connectivity, AD-specific DNS/Kerberos/LDAP/SMB/RPC rules and management-network isolation before treating integration as complete. GitHub Actions runs offline checks, not the full live AD/Wazuh environment. All elements in this section are **planned, not deployed**.
+
+The original v0.2 plan below is retained as design history; where it differs from this update, use this dated ESC-002 decision.
+
 ## 1. Propósito
 
 Crear una **empresa ficticia pequeña, pero plausible**, con sede central (HQ), tres sucursales, servicios de negocio, identidades, permisos, comunicaciones y controles defensivos. Partir de la topología probada del Lab 12 y desarrollar **tres escenarios de seguridad interrelacionados**. El valor del portfolio no será el número de productos instalados, sino la capacidad de reproducir problemas, capturar evidencias, investigar, endurecer controles y demostrar sus límites.
